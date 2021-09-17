@@ -18,7 +18,7 @@ fun Application.configureMonitoring() {
         header(HttpHeaders.AccessControlAllowOrigin,"*")
     }
 
- /*   install(CORS) {
+   install(CORS) {
       /*  method(HttpMethod.Options)
         method(HttpMethod.Put)
         method(HttpMethod.Delete)
@@ -31,9 +31,12 @@ fun Application.configureMonitoring() {
         allowNonSimpleContentTypes = true
         allowCredentials = true
         allowSameOrigin = true
-        host("*", listOf("http", "https")) // frontendHost might be "*"
+
+       anyHost()
+
+    //    host("*", listOf("http", "https")) // frontendHost might be "*"
     }
 
-  */
+
 
 }
