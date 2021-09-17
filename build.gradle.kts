@@ -11,7 +11,11 @@ plugins {
 group = "nyx"
 version = "0.0.1"
 application {
-    mainClass.set("nyx.ApplicationKt")
+    mainClass.set("nyx.pa1_example_server.ApplicationKt")
+}
+
+tasks.create("stage") {
+    dependsOn("installDist")
 }
 
 repositories {
