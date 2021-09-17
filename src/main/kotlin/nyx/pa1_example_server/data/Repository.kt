@@ -9,7 +9,7 @@ object Repository {
     private val previews = emptyList<ArticlePreview>().toMutableList()
     private val details = emptyList<ArticleDetail>().toMutableList()
 
-    init{
+    init {
         generateDummyData()
     }
 
@@ -30,10 +30,10 @@ object Repository {
             val _details = emptyList<ArticleDetail>().toMutableList()
 
             for (j in 0..2) {
-                val articlePreview = ArticlePreview(i + j, titles[i], imagePaths[i])
+                val articlePreview = ArticlePreview(i + j, titles[j], imagePaths[j])
 
                 _previews.add(articlePreview)
-                _details.add(articlePreview.addDetail(timestamps[i], text))
+                _details.add(articlePreview.addDetail(timestamps[j], text))
             }
             previews.addAll(_previews)
             details.addAll(_details)
