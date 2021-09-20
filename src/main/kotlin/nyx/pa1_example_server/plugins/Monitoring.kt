@@ -23,7 +23,7 @@ fun Application.configureMonitoring() {
 
 
 
- /*  install(CORS) {
+   install(CORS) {
       /*  method(HttpMethod.Options)
         method(HttpMethod.Put)
         method(HttpMethod.Delete)
@@ -44,7 +44,7 @@ fun Application.configureMonitoring() {
     //    host("*", listOf("http", "https")) // frontendHost might be "*"
     }
 
-  */
+
 
 
 
