@@ -13,10 +13,13 @@ fun Application.configureMonitoring() {
         filter { call -> call.request.path().startsWith("/") }
     }
 
+    /*
  install(DefaultHeaders){
         header(HttpHeaders.Accept, "application/json")
         header(HttpHeaders.AccessControlAllowOrigin,"*")
     }
+
+     */
 
 
 
@@ -30,7 +33,7 @@ fun Application.configureMonitoring() {
        */
 
 
-        allowNonSimpleContentTypes = true
+     //   allowNonSimpleContentTypes = true
       /*  allowCredentials = true
         allowSameOrigin = true
 
