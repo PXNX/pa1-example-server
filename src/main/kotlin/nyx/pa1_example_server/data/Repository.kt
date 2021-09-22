@@ -24,7 +24,7 @@ object Repository {
             "https://c.files.bbci.co.uk/D505/production/_115033545_gettyimages-1226314512.jpg"
         )
         val timestamps =
-            listOf(626_569_200_000, 975_193_200_000, 1_405_202_400_000, System().currentTimeMillis() - 300_000)
+            listOf(626_569_200_000, 975_193_200_000, 1_405_202_400_000, System.currentTimeMillis() - 300_000)
         val text =
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
 
@@ -32,7 +32,7 @@ object Repository {
             val _previews = emptyList<ArticlePreview>().toMutableList()
             val _details = emptyList<ArticleDetail>().toMutableList()
 
-            for (j in 0..2) {
+            for (j in titles.indices) {
                 val articlePreview = ArticlePreview(i + j, titles[j], imagePaths[j])
 
                 _previews.add(articlePreview)
