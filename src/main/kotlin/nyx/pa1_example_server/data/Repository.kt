@@ -16,10 +16,10 @@ object Repository {
     @Suppress("LocalVariableName")
     fun generateDummyData() {
         val titles =
-            listOf("Die Mauer ist gefallen!", "Happy Birthday!", "Deutschland ist Weltmeister!", "Corona in 4k!")
+            listOf("Tag der deutschen Einheit!", "Happy Birthday!", "Deutschland ist Weltmeister!", "Corona in 4k!")
         val imagePaths = listOf(
-            "https://www.100.bmwi.de/BMWI100/Redaktion/DE/Bilder/Startseite/meilenstein-08-wiedervereinigung.jpg?__blob=normal&v=4&size=1920w",
-            "https://wallpaperforu.com/wp-content/uploads/2020/08/food-wallpaper-20080219232413-scaled.jpg",
+            "https://www.wallpaperup.com/uploads/wallpapers/2014/01/08/219616/3f9e2ddec32a2f424a660857f4efba4a-1000.jpg",
+            "https://www.wallpaperup.com/uploads/wallpapers/2014/02/28/281578/afc3df95e4124bdbe1b871b43a60e559-1000.jpg",
             "https://www.wallpaperup.com/uploads/wallpapers/2014/07/14/394687/942eaea97468e179000f4f55f7ed79a6-700.jpg",
             "https://c.files.bbci.co.uk/D505/production/_115033545_gettyimages-1226314512.jpg"
         )
