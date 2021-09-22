@@ -15,13 +15,16 @@ object Repository {
 
     @Suppress("LocalVariableName")
     fun generateDummyData() {
-        val titles = listOf("Die Mauer ist gefallen!", "Happy Birthday!", "Deutschland ist Weltmeister!")
+        val titles =
+            listOf("Die Mauer ist gefallen!", "Happy Birthday!", "Deutschland ist Weltmeister!", "Corona in 4k!")
         val imagePaths = listOf(
             "https://bilder.t-online.de/b/82/65/70/98/id_82657098/tid_da/mauerfall-1989-jubelnde-menschen-auf-der-berliner-mauer-am-brandenburger-tor.jpg",
             "https://images4.alphacoders.com/699/699453.jpg",
-            "https://www.wallpaperup.com/uploads/wallpapers/2014/07/14/394687/942eaea97468e179000f4f55f7ed79a6-700.jpg"
+            "https://www.wallpaperup.com/uploads/wallpapers/2014/07/14/394687/942eaea97468e179000f4f55f7ed79a6-700.jpg",
+            "https://c.files.bbci.co.uk/D505/production/_115033545_gettyimages-1226314512.jpg"
         )
-        val timestamps = listOf(626_569_200_000, 975_193_200_000, 1_405_202_400_000)
+        val timestamps =
+            listOf(626_569_200_000, 975_193_200_000, 1_405_202_400_000, System().currentTimeMillis() - 300_000)
         val text =
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
 

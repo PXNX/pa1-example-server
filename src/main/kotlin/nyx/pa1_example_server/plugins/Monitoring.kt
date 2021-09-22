@@ -7,7 +7,7 @@ import io.ktor.http.*
 import io.ktor.request.*
 
 fun Application.configureMonitoring() {
-    
+
     install(CallLogging) {
         level = Level.TRACE
         filter { call -> call.request.path().startsWith("/") }
@@ -23,29 +23,26 @@ fun Application.configureMonitoring() {
 
 
 
-   install(CORS) {
-      /*  method(HttpMethod.Options)
-        method(HttpMethod.Put)
-        method(HttpMethod.Delete)
-        method(HttpMethod.Patch)
-        header(HttpHeaders.Authorization)
+    install(CORS) {
+        /*  method(HttpMethod.Options)
+          method(HttpMethod.Put)
+          method(HttpMethod.Delete)
+          method(HttpMethod.Patch)
+          header(HttpHeaders.Authorization)
 
-       */
+         */
 
 
-     //   allowNonSimpleContentTypes = true
-      /*  allowCredentials = true
-        allowSameOrigin = true
+        //   allowNonSimpleContentTypes = true
+        /*  allowCredentials = true
+          allowSameOrigin = true
 
-       */
+         */
 
-       anyHost()
+        anyHost()
 
-    //    host("*", listOf("http", "https")) // frontendHost might be "*"
+        //    host("*", listOf("http", "https")) // frontendHost might be "*"
     }
-
-
-
 
 
 }

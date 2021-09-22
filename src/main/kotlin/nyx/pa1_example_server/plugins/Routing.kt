@@ -33,7 +33,7 @@ fun Application.configureRouting() {
         }
 
 
-        get("pwa"){
+        get("pwa") {
             val name = "HHH"
             call.respondHtml(HttpStatusCode.OK) {
                 head {
