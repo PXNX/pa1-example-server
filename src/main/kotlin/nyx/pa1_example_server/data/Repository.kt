@@ -18,8 +18,8 @@ object Repository {
         val titles =
             listOf("Die Mauer ist gefallen!", "Happy Birthday!", "Deutschland ist Weltmeister!", "Corona in 4k!")
         val imagePaths = listOf(
-            "https://bilder.t-online.de/b/82/65/70/98/id_82657098/tid_da/mauerfall-1989-jubelnde-menschen-auf-der-berliner-mauer-am-brandenburger-tor.jpg",
-            "https://images4.alphacoders.com/699/699453.jpg",
+            "https://www.100.bmwi.de/BMWI100/Redaktion/DE/Bilder/Startseite/meilenstein-08-wiedervereinigung.jpg?__blob=normal&v=4&size=1920w",
+            "https://wallpaperforu.com/wp-content/uploads/2020/08/food-wallpaper-20080219232413-scaled.jpg",
             "https://www.wallpaperup.com/uploads/wallpapers/2014/07/14/394687/942eaea97468e179000f4f55f7ed79a6-700.jpg",
             "https://c.files.bbci.co.uk/D505/production/_115033545_gettyimages-1226314512.jpg"
         )
